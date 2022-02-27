@@ -5,7 +5,7 @@ import {auth} from './firebase.js'
 import Line from "./components/Line";
 
 const App = () => {
-    const user = useAuthState(auth);
+    const [user] = useAuthState(auth);
 
     return (
         <div>

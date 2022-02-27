@@ -1,9 +1,10 @@
 import React from 'react';
+import SignOut from "./SignOut";
 
 const Line = () => {
     return (
         <div>
-            <p>Lineです</p>
+            <SignOut />
         </div>
     );
 };
