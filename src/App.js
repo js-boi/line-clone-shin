@@ -1,11 +1,15 @@
 import React from 'react';
 import SignIn from "./components/SignIn";
+import {useAuthState} from 'react-firebase-hooks/auth';
+import {auth} from './firebase.js'
+import Line from "./components/Line";
 
 const App = () => {
+    const user = useAuthState(auth);
+
     return (
         <div>
-            <p>unko</p>
-            <SignIn />
+            {user ? <Line/> : <SignIn/>}
         </div>
     );
 };
