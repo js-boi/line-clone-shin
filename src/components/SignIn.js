@@ -11,7 +11,6 @@ const SignIn = () => {
 
     return (
         <div>
-            <p>SignIn</p>
             <Button onClick={signInWithGoogle}>グーグルでログインする</Button>
         </div>
     );

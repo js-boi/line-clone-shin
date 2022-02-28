@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import SignOut from "./SignOut";
 import {db} from '../firebase';
+import SendMessage from "./SendMessage";
 
 const Line = () => {
 
@@ -30,6 +31,7 @@ const Line = () => {
                     )
                 )}
             </div>
+            <SendMessage />
         </div>
     );
 };
