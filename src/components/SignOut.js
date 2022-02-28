@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button} from "@mui/material";
 import {auth} from "../firebase";
-
+import CallIcon from '@mui/icons-material/Call';
 
 const SignOut = () => {
     return (
@@ -11,6 +11,8 @@ const SignOut = () => {
             >
                 サインアウト
             </Button>
+            <h3>{auth.currentUser.displayName}</h3>
+            <CallIcon />
         </div>
     );
 };
