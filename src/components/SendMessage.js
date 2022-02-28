@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const SendMessage = () => {
+    const [message, setMessage] = useState("");
+
     return (
         <div>
-            unti
+            <form>
+                <div className="sendMsg">
+                    <input type="text"
+                           placeholder="メッセージを入力してください"
+                    />
+                </div>
+            </form>
         </div>
     );
 };
