@@ -4,7 +4,7 @@ import {db} from '../firebase';
 
 const Line = () => {
 
-    const [messages, setMessages] = useState();
+    const [messages, setMessages] = useState([]);
 
     useEffect(() => {
         db.collection("messages")
@@ -17,8 +17,19 @@ const Line = () => {
 
     return (
         <div>
-            {console.log(messages)}
+            {/*{console.log(messages)}*/}
             <SignOut/>
+            <div className="msgs">
+                {messages.map(({id, text, photoURL, uid}) => (
+                        <div>
+                            <div key={id}>
+                                <img src={photoURL} alt=""/>
+                                <p>{text}</p>
+                            </div>
+                        </div>
+                    )
+                )}
+            </div>
         </div>
     );
 };
