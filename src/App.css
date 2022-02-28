@@ -70,8 +70,7 @@ p {
     z-index: 1;
     border-top: 1px solid lightgray;
     margin-left: -5px;
-    padding: 10px;
-    padding-bottom: 20px;
+    padding: 24px 10px 28px;
     background-color: #fafafa;
 }
 

@@ -5,8 +5,12 @@ import {auth} from "../firebase";
 
 const SignOut = () => {
     return (
-        <div>
-            <Button onClick={()=> auth.signOut()}>サインアウト</Button>
+        <div className="header">
+            <Button style={{color: "#fff", fontSize: "18px"}}
+                    onClick={() => auth.signOut()}
+            >
+                サインアウト
+            </Button>
         </div>
     );
 };

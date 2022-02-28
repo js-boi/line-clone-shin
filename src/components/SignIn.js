@@ -10,8 +10,11 @@ const SignIn = () => {
     }
 
     return (
-        <div>
-            <Button onClick={signInWithGoogle}>グーグルでログインする</Button>
+        <div className="header">
+            <Button style={{color: "#fff", fontSize: "18px"}}
+                    onClick={signInWithGoogle}
+            >
+                グーグルでログインする</Button>
         </div>
     );
 };
